@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 # OracleDB connection configuration
 oracledb.init_oracle_client()  # Use if Oracle Instant Client is required on your system
-dsn = oracledb.makedsn("localhost", 1521, service_name="XE")  # Update host, port, and service name
-connection = oracledb.connect(user="your_username", password="your_password", dsn=dsn)
+dsn = oracledb.makedsn("192.168.137.1", 1521, service_name="XE")  # Update host, port, and service name
+connection = oracledb.connect(user="system", password="bhavik", dsn=dsn)
 
 # Endpoint: Get all flights
 @app.route('/flights', methods=['GET'])
