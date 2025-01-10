@@ -1,0 +1,85 @@
+Get All Users
+Method: GET
+URL: http://127.0.0.1:5000/api/users
+Body: (None)
+
+
+2. Insert a New User
+Method: POST
+URL: http://127.0.0.1:5000/api/users
+Headers:
+Content-Type: application/json
+Body (JSON):
+json
+Copy code
+{
+  "username": "johndoe",
+  "password": "securepassword",
+  "email": "johndoe@example.com",
+  "role_name": "Admin"
+}
+
+
+3. Get All Employees
+Method: GET
+URL: http://127.0.0.1:5000/api/employees
+Body: (None)
+
+
+4. Insert a New Employee
+Method: POST
+URL: http://127.0.0.1:5000/api/employees
+Headers:
+Content-Type: application/json
+Body (JSON):
+json
+Copy code
+{
+  "employee_name": "Alice Johnson",
+  "department": "IT",
+  "username": "adminuser"
+}
+
+
+5. Update an Employee's Department
+Method: PUT
+URL: http://127.0.0.1:5000/api/employees/1
+(Replace 1 with the Employee ID to update.)
+Headers:
+Content-Type: application/json
+Body (JSON):
+json
+Copy code
+{
+  "department": "HR",
+  "username": "adminuser"
+}
+
+
+6. Delete an Employee
+Method: DELETE
+URL: http://127.0.0.1:5000/api/employees/1?username=adminuser
+(Replace 1 with the Employee ID to delete.)
+Body: (None)
+Expected Responses
+Success:
+json
+Copy code
+{
+  "message": "Operation Successful Message"
+}
+Error Example:
+json
+Copy code
+{
+  "error": "Detailed Error Message"
+}
+
+
+Steps in Postman
+Open Postman.
+Create a new request.
+Select the HTTP method (GET, POST, PUT, DELETE).
+Enter the URL.
+For POST or PUT, select "Body" -> "raw" -> "JSON" and provide the JSON body.
+Send the request and observe the response.
