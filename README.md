@@ -1,5 +1,12 @@
 # Flight Scheduling System
 
+## created by :-
+*Patil Bhavik Deepak **
+Student of Amrutvahini College of Engineering
+T.E Computer Engineering Department 
+
+
+
 ## Description
 The Flight Scheduling System is a web-based application designed to manage flight operations effectively. It enables users to schedule flights, manage passenger bookings, update flight statuses, and monitor employee information in a streamlined manner. Built using modern technologies, the system connects an Oracle database with a Flask-based backend and provides APIs that can be tested and accessed using Postman. This system is aimed at improving operational efficiency for airlines or travel agencies by digitizing and automating core processes.
 
@@ -42,3 +49,8 @@ Test and interact with APIs using Postman.
 Error Handling
 
 Comprehensive error handling to display meaningful error messages for database or validation issues.
+
+
+
+## under guidance :-
+Anirudha Gaikwad sir
